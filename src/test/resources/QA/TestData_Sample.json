@@ -1,0 +1,2729 @@
+{
+	"ClaimSubmission": [
+		{
+			"TestData_ID": "1",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "2",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "3",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "4",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "5",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "6",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "7",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "8",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "9",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "10",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "11",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "12",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "628235",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"CostCarrier": "00029-CC-Eng",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "13",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "14",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "15",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "16",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "17",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "18",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "19",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "20",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "21",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "628235",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"DealerClaimNumber": "OTC",
+			"CostCarrier": "00029-CC-Eng",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "22",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "23",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "24",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "25",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"CostCarrier": "00029-CC-Eng",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "A352018010664",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "26",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"DealerClaimNumber": "OTC",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700302",
+					"SerialNumber": "BTC00801",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700303",
+					"SerialNumber": "BTC00802",
+					"Quantity": "3"
+				},
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		},
+		{
+			"TestData_ID": "27",
+			"Account": "BIG TRUCK S.r.l.",
+			"ClaimType": "Vehicle",
+			"ProductCategory": "Daimler Buses",
+			"Inventory": "WDF3071011C003000",
+			"FIN": "WDF3071011C003000",
+			"RepairOrderNumber": "JB001",
+			"DealerComments": "QA Test Dealer Comments",
+			"PartNumber": "X002052177700302",
+			"Part_CasualPart": "Part",
+			"Vehicle_CasualPart": "X002052177700302",
+			"CasualPartSerialNumber": "BTC00467",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"UploadFilePath_BasicSection": "sample.pdf",
+			"UploadFilePath_PartsSection": "sample.pdf",
+			"UploadFilePath_LaborSection": "sample.pdf",
+			"UploadFilePath_OtherCostsSection": "sample.pdf",
+			"DealerClaimNumber": "OTC",
+			"InsatalledOEMPart": [
+				{
+					"PartNumber": "X002052177700304",
+					"SerialNumber": "BTC00803",
+					"Quantity": "3"
+				}
+			],
+			"NonOEMPart": [
+				{
+					"PartNumber": "1",
+					"Description": "Bolts",
+					"NetPrice": "2",
+					"Quantity": "900"
+				},
+				{
+					"PartNumber": "2",
+					"Description": "Oil",
+					"NetPrice": "900",
+					"Quantity": "2"
+				},
+				{
+					"PartNumber": "3",
+					"Description": "Pipes",
+					"NetPrice": "25",
+					"Quantity": "72"
+				}
+			],
+			"Labor": [
+				{
+					"JobCode": "541212",
+					"TotalLaborHours": "60",
+					"ReasonForAdditionalLaborTime": "Comments for 541212"
+				},
+				{
+					"JobCode": "20103010",
+					"TotalLaborHours": "40",
+					"ReasonForAdditionalLaborTime": "Comments for 20103010"
+				},
+				{
+					"JobCode": "EEMM20103010",
+					"TotalLaborHours": "20",
+					"ReasonForAdditionalLaborTime": "Comments for EEMM20103010"
+				}
+			],
+			"OtherCosts": [
+				{
+					"TotalCost": "420",
+					"Description": "Test Description"
+				}
+			]
+		}
+	],
+	"PreAuthorization": [
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "1",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "2",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "3",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "4",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "5",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "6",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "7",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "8",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "9",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "10",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "11",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "12",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "13",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "14",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "15",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "16",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "17",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "18",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "19",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "20",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "21",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "22",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "23",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "24",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "25",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"CostCarrier": "00029 - CC-Eng",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		},
+		{
+			"ClaimType": "Parts",
+			"TestData_ID": "26",
+			"ProductCategory": "Daimler Buses",
+			"RepairOrder": "RONo_001_00031",
+			"DealerComments": "Test Dealer Comments",
+			"BreakdownIndicator": "B - Prevention of Breakdown",
+			"PartNumber":"628235",
+			"DecisionCodes": "A011-Please create TIPS case.,C001-Provisional decision"
+		}
+	],
+	"PolicyDefinitionCreation": [
+		{
+			"TestData_ID": "1",
+			"AuthoredBy": "HQ",
+			"MonthsCoveredFrom": "0",
+			"MonthsCoveredTo": "24",
+			"CostCarrier": "30000",
+			"Responsible": "Daimler Buses",
+			"ProductHierarchy": "Busses",
+			"InventoryGroup": "ATM_INV_GRP_Daimler_Buses_307101",
+			"DamageCodeGroup": "ATM_DCG_QA909_AA-ZZ",
+			"DamageCode": "QA909",
+			"PaymentDefinition": "ATM_HQ_STOCK_PAYMENTDEFINITION"
+		}
+	],
+	"PartPriceParameterCreation": [
+		{
+			"TestData_ID": "1",
+			"BusinessUnit": "GD",
+			"WholesaleAccount": "Star Automotive Hellas Single Member S.A.",
+			"Brand": "MB",
+			"Productfamily": "Busses",
+			"Responsible": "Daimler Buses",
+			"PartDiscountGroup": "01",
+			"DealerDiscountGroup": "99401",
+			"DealerHandlingPercentage": "10",
+			"LandedCostPercentage": "10"
+		}
+	],
+	"DamageCode": [
+		{
+			"TestData_ID": "1",
+			"DamageType": "01 02 03 04 05 06 07 08 09 A1 B1 C1 D1"
+		}
+	],
+	"InventoryCreation": [
+		{
+			"TestData_ID": "1",
+			"Count": "1",
+			"AccountName": "Star Automotive Hellas Single Member S.A.",
+			"Baumuster": "307101",
+			"BusinessUnit": "GD",
+			"Mileage": "100",
+			"Responsible": "Daimler Buses",
+			"WorldManufacturerCode": "WDT"
+		},
+		{
+			"TestData_ID": "25",
+			"Count": "1",
+			"AccountName": "Star Automotive Hellas Single Member S.A.",
+			"Baumuster": "307101",
+			"BusinessUnit": "GD",
+			"Mileage": "100",
+			"Responsible": "Daimler Buses",
+			"WorldManufacturerCode": "WDT"
+		},
+		{
+			"TestData_ID": "12",
+			"Count": "1",
+			"AccountName": "Star Automotive Hellas Single Member S.A.",
+			"Baumuster": "307101",
+			"BusinessUnit": "GD",
+			"Mileage": "100",
+			"Responsible": "Daimler Buses",
+			"WorldManufacturerCode": "WDT"
+		}
+	],
+	"WarrantyRegistration": [
+		{
+			"TestData_ID": "1",
+			"AccountName": "BIG TRUCK S.r.l."
+		}		
+	],
+	"WarrantyDeRegistration": [
+		{
+			"TestData_ID": "1",
+			"DeRegistrationReason": "Wrong Registration",
+			"DeRegistrationComments": "Test Comments"
+		}
+	],
+	"MajorComponentsCreation": [
+		{
+			"TestData_ID": "1",
+			"ParentUnit": "WDF3071011C003000",
+			"MajorComponentType": "Engine",
+			"SerialNumber": "AX0047910C79480",
+			"Description": "Test Major Component Description"
+		}
+	],
+	"PaymentDefinitionCreation": [
+		{
+			"TestData_ID": "1",
+			"BusinessUnit": "HQ",
+			"CostCategories": "OEMParts,NonOEMParts,Labor,Travel,Towing,Miscellaneous"
+		},
+		{
+			"TestData_ID": "2",
+			"BusinessUnit": "GD,553-NL-TOC",
+			"CostCategories": "Labor"
+		}
+	],
+	"WarrantyProductionCreation": [
+		{
+			"TestData_ID": "1",
+			"BusinessUnit": "HQ,GD"
+		}
+	],
+	"WarrantyProductionEdit": [
+		{
+			"TestData_ID": "1",
+			"BusinessUnit": "HQ,GD,553-NL-TOC"
+		}
+	],
+	"WarehouseCreation": [
+		{
+			"TestData_ID": "1",
+			"BusinessUnit": "HQ,GD",
+			"AddressLine1":"123",
+			"AddressLine2":"My Street",
+			"StateOrProvince":"New York",
+			"City":"Kingston",
+			"Email":"warehouse007@warehouse.com",
+			"Country":"United States",
+			"ZipCode": "12401"
+		}
+	],
+	"AccountAssociationCreation": [
+		{
+			"TestData_ID": "1",
+			"ParentWholeSaleAccount": "Daimler Truck Nederland B.V.",
+			"Brand": "MB",
+			"ProductFamily": "Busses",
+			"Responsible": "Daimler Buses"
+		}
+	],
+	"WarrantyCodeCreation": [
+		{
+			"TestData_ID": "1",
+			"Responsible": "Daimler Buses",
+			"BusinessUnits": "HQ,GD"
+		}
+	],
+	"DamageCodeGroupCreation": [
+		{
+			"TestData_ID": "1",
+			"Responsible": "Daimler Buses",
+			"ResponsibleDropdownValues": "MB Truck Wörth,MB Brazil,Unimog,Industrial Aggregates,DICV,FUSO Europe,Daimler Buses,MB Turkey,DVCM",
+			"BusinessUnit": "HQ",
+			"ResponsibleClone": "DICV"
+		}
+	],
+	"DamageCodeGroupRangeEdit": [
+		{
+			"TestData_ID": "1",
+			"Responsible": "DICV"
+		}
+	],
+	"RateDetailsCreationPage": [
+		{
+			"TestData_ID": "1",
+			"Account": "BIG TRUCK S.r.l.",
+			"Responsible": "Daimler Buses",
+			"SubmittedLaborRate": "110",
+			"ProductFamilyGroup": "QA_Daimler Busses"
+		},
+		{
+			"TestData_ID": "2",
+			"Account": "Bergerat Monnoyeur Algérie s.p.a.",
+			"Responsible": "Daimler Buses",
+			"SubmittedLaborRate": "110",
+			"ProductFamilyGroup": "QA_Daimler Trucks"
+		}
+	],
+	"RateDetailsEditPage": [
+		{
+			"TestData_ID": "1",
+			"Responsible": "Unimog"
+		}
+	],
+	"AccountCreationPage": [
+		{
+			"TestData_ID": "1",
+			"BillingStreet": "Test billing street",
+			"BillingCity": "Test Billing City",
+			"BillingStreet_Province": "Piemonte",
+			"BillingZip_PostalCode": "10036",
+			"BillingCountry": "Italy",
+			"ShippingStreet": "Test Shipping street",
+			"ShippingCity": "Test Shipping City",
+			"ShippingStreet_Province": "Piemonte",
+			"ShippingZip_PostalCode": "10036",
+			"ShippingCountry": "Italy",
+			"ParticipatingInRemanufacturing": "Yes",
+			"LaborUnits": "Hours",
+			"DealerDiscountGroup_Parts": "8"
+		}
+	],
+	"GoodwillMatrix": [
+		{
+			"TestData_ID": "1",
+			"KMs": "1000,5000",
+			"Months": "6,12",
+			"Hrs":"50,100"
+		},
+		{
+			"TestData_ID": "2",
+			"KMs": "1000,5000",
+			"Months": "6,12",
+			"Hrs":"50,100"
+		}		
+	],
+	"MileageIndicatorMappings": [
+		{
+			"TestData_ID": "1",
+			"BusinessUnit": "GD",
+			"UnitIndicator": "Miles",
+			"ProductFamily": "Busses"
+		}
+	],
+	"MileageReadingChangeRequest" : [
+		{
+			"TestData_ID": "1",
+			"Account": "BIG TRUCK S.r.l."
+		}
+	],
+	"InventoryGroupRange": [
+		{
+			"TestData_ID": "1",
+			"Baureihe": "307",
+			"OptionCode": "V1C",
+			"Baumuster": "307101",
+			"CustomerCategory": "ON,OFF"
+		}
+	],
+	"InventoryGroup": [
+		{
+			"TestData_ID": "1",
+			"ResponsibleDropdownValues": "MB Truck Wörth,MB Brazil,Unimog,Industrial Aggregates,DICV,FUSO Europe,Daimler Buses,MB Turkey,DVCM"
+		}
+	],
+	"DamageCodeRange": [
+		{
+			"TestData_ID": "1",
+			"DamageCodeFrom": "QA100",
+			"DamageCodeTo": "QA200",
+			"DamageTypeFrom": "AA",
+			"DamageTypeTo": "ZZ"
+		}
+	],
+	"DamageCodeRangeEdit": [
+		{
+			"TestData_ID": "1",
+			"DamageCodeFrom": "QA150",
+			"DamageCodeTo": "QA300",
+			"DamageTypeFrom": "BB",
+			"DamageTypeTo": "YY"
+		}
+	],
+	"ClaimReopen": [
+		{
+			"TestData_ID": "1",
+			"ReopenReason": "Others"
+		},
+		{
+			"TestData_ID": "12",
+			"ReopenReason": "Others"
+		},
+		{
+			"TestData_ID": "21",
+			"ReopenReason": "Others"
+		},
+		{
+			"TestData_ID": "25",
+			"ReopenReason": "Others"
+		},
+		{
+			"TestData_ID": "26",
+			"ReopenReason": "Others"
+		}
+	],
+	"ClaimTemplateCreation": [
+		{
+			"TestData_ID": "1",
+			"DamageCode": "00873ZB"
+		}
+	],
+	"FieldMeasureCreation": [
+		{
+			"TestData_ID": "1",
+			"FieldMeasureID": "FM003",
+			"Codeword": "test_field_measure",
+			"FieldMeasureNameEnglish": "Test_FieldMeasureNameEnglish",
+			"FieldMeasureNameGerman": "Test_FieldMeasureNameGerman",
+			"Responsible": "Daimler Buses",
+			"DamageCode": "0090083",
+			"BusinessUnit": "HQ",
+			"EstimatedBudget": "1000000",
+			"ConsumedBudget": "100",
+			"FieldMeasureDescription": "Test Field Measure Description",
+			"ClaimTemplateAssociationName": "Test Automation Claim Template22fs;fsTest Automation Claim Template11",
+			"ClaimTemplate": "000000938",
+			"Mandatory": "true",
+			"IsActive": "true",
+			"CampaignMember1": "W1T96302010624581",
+			"CampaignMember2": "W1T96300310541239",
+			"CampaignMember3": "W1T96340310631460",
+			"FieldMeasuresMembers": "WDF3071011C002999"
+		},
+		{
+			"TestData_ID": "27",
+			"FieldMeasureID": "FM004",
+			"Codeword": "test_field_measure",
+			"FieldMeasureNameEnglish": "Test_FieldMeasureNameEnglish",
+			"FieldMeasureNameGerman": "Test_FieldMeasureNameGerman",
+			"Responsible": "Daimler Buses",
+			"DamageCode": "0090082",
+			"BusinessUnit": "HQ",
+			"EstimatedBudget": "1000000",
+			"ConsumedBudget": "100",
+			"FieldMeasureDescription": "Test Field Measure Description",
+			"ClaimTemplateAssociationName": "Test Automation claim template22",
+			"ClaimTemplate": "Test Automation Claim Template",
+			"Mandatory": "true",
+			"IsActive": "true",
+			"CampaignMember1": "W1T96302010624581",
+			"CampaignMember2": "W1T96300310541239",
+			"CampaignMember3": "W1T96340310631460",
+			"FieldMeasuresMembers": "WDF3071011C002999"
+		}
+	]
+}

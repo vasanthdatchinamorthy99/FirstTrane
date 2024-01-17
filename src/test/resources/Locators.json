@@ -1,0 +1,44 @@
+{
+	"CommonXpaths": [
+		{
+			"DataType": "Text Box",
+			"CommonXpath": "//label[text()='<fieldLabel>']//following-sibling::div//*[contains(@id, 'input')]"
+		},
+		{
+			"DataType": "Button",
+			"CommonXpath": "//button[text()='<fieldLabel>']"
+		},
+		{
+			"DataType": "Look Up",
+			"CommonXpath": "//label[text()='<fieldLabel>']//following-sibling::div//input"
+		},
+		{
+			"DataType": "Look Up Value",
+			"CommonXpath": "//lightning-base-combobox-formatted-text[@title= '<fieldLabel>']"
+		},
+		{
+			"DataType": "Dropdown",
+			"CommonXpath": "//*[text() = '<fieldLabel>' and contains(@class,'label')]//parent::*//button[contains(@aria-controls, 'dropdown-element')]"
+		},
+		{
+			"DataType": "Dropdown Value",
+			"CommonXpath": "(//*[contains(text(),'<fieldLabel>') and contains(@class,'label')]//parent::*//*[@role='option']//span[text()='<value>'])[1]"
+		}
+	],
+	"LoginPage": [
+		{
+			"alias": "Usernamefs:fsPassword",
+			"DataType": "Text Box",
+			"CustomXpath": "//input[@id='<fieldLabel_LowerCase>' or @placeholder='<fieldLabel>']",
+			"Editable": "Yes",
+			"Mandatory": "Yes"
+		},
+		{
+			"alias": "LogIn",
+			"DataType": "Button",
+			"CustomXpath": "//*[@type='button' or @type='submit']",
+			"Editable": "No",
+			"Mandatory": "Yes"
+		}
+	]
+}

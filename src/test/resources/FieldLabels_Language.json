@@ -1,0 +1,12 @@
+{
+	"LoginPage": [
+		{
+			"alias": "Username",
+			"English": "Username"
+		},
+		{
+			"alias": "Password",
+			"English": "Password"
+		}
+	]
+}
