@@ -131,6 +131,11 @@ public class Quote_Methods {
 //			Waits.waitForGivenTime(5000);	
 //			status= ObjectInitializer.quotePage.get().Status.innerText();
 //		}
+		
+		
+		
+		
+		
 		GenericAssertions.assertEquals("Accepted", status, "Status:"+status+"");
 		logger.info("Text: \"******** Status: Accepted*********");
        // page.evaluate("window.scrollBy(0,600)");
