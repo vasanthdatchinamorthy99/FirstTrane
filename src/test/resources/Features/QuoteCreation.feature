@@ -1,5 +1,5 @@
 @Quote
-Feature: Quote
+Feature: Quote Functionalitys
 	@Guaranteed_Maintenance_Plan
 	  Scenario Outline: Quote | Basic Setup 
 	    

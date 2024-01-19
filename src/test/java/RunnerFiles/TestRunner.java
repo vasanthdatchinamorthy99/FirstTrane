@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
                      glue = { "com.tavant.base", "com.project.base","com.project.CommonModules", "com.project.CustomModules" },
                    plugin = { "pretty","html:target/HtmlReports/report.html", "com.tavant.listeners.CustomListener:" },
                   publish = false,
-                     tags = "@Guaranteed_Maintenance_Plan"
+                     tags = "@Contract_Master"
                  )
 public class TestRunner {
 

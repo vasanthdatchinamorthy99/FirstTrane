@@ -6,15 +6,14 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.tavant.base.PageFactory;
 
-public class QuotePage {
+public class Quote_Page {
 
 
 	Page page = PageFactory.getPage();
 
 
 	//Variable
-	public Locator Quotes_tab         = page.locator("//*[@title='Quotes']//parent::one-app-nav-bar-item-root");
-	public Locator More_arrow        = page.locator(" //span[text()='More']//parent::a//child::Lightning-icon");
+	
 	public Locator Quotes            = page.locator("//*[@role='menuitem']//span[text()='Quotes']");
 	public Locator New_Quotes        = page.locator("(//*[@title='New'])[1]");
 	public Locator Search_Box        = page.locator("//*[@class='slds-grid slds-wrap slds-grow']//*[text()='Select']");
@@ -26,7 +25,7 @@ public class QuotePage {
 	public Locator Skip_Addons_button= page.locator("//button[text()='Skip Add-ons'] ");
 	public String Table_body         ="//*[@class='slds-table']//tbody ";
 	public Locator Save_and_Submit   = page.locator("//button[text()='Save & Submit']");
-	public Locator Related_botton    = page.locator("//*[text()='Related'] ");
+//	public Locator Related_botton    = page.locator("//*[text()='Related'] ");
 	public Locator Quote_Unit_Name   = page.locator("//*[text()='Quote Unit Name']//ancestor::thead//following-sibling::tbody//child::th//*[@class='slds-truncate'] ");
 	public Locator Status            = page.locator("//*[text()='Status']//parent::div//following-sibling::div");
     public Locator proceed_btn       = page.locator("//button[text()='Proceed']");//"//*[@class='slds-m-left_x-small']//button[text()='Proceed']");
@@ -34,14 +33,17 @@ public class QuotePage {
     public Locator service_Contracts = page.locator(" //*[text()='Service Contracts']//ancestor::lst-list-view-manager-header//following-sibling::div//child::*[@class='slds-card__body slds-wrap slds-grid']");
 
 	//method
+    
+    public Locator select_DropdownValue(String data) {
+    	return page.locator("//*[@class='label'][text()='"+data+"']");
+    }
+    
+    
 	public Locator search_boxes(String value) {
 		return page.locator("//*[text()='"+value+"']//parent::div//following-sibling::div//div//span[text()='Select']");
 	}
 	public Locator Created_Quote_data(String data) {
 		return page.locator("//*[text()='"+data+"']//parent::Lightning-output-field//*[@class='slds-form-element__static']");
-	}
-	public Locator List_Quote_data(String data) {
-		return page.locator("(//*[@title='"+data+"']//ancestor::table//child::tbody//child::th)[1]//a");
 	}
 	public Locator Selectbtn_Contract_Name(String Name) {//CMDEMO_27DEC
 		return page.locator("(//div[text()='"+Name+"']//ancestor::td//following-sibling::td)[5]//button[text()='Select'] ");
