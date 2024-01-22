@@ -27,7 +27,12 @@ public class ContractMasterPage {
 	public Locator OEM_Parts=page.locator("//*[text()='OEM Parts']");
 	public Locator Travel_By_Hours=page.locator("//*[text()='Travel By Hours']");
 	public Locator selectbtn =page.locator("(//*[text()='Select'])[2]");
+	public Locator contract_Type =page.locator("(//*[text()='Contract Type']//parent::div//following-sibling::div//div//span)[1]");
 	
+	
+	public Locator contractType_Value(String text) {
+         return page.locator("//*[@title='"+text+"']");
+	}
 	//public Locator Travel=page.locator("//*[text()='Travel By Hours']");
 	public Locator contract_Master_Feilds(String Label) {
 		return page.locator(" //*[text()='"+Label+"']//following-sibling::div//*[contains(@id,'input')]");

@@ -22,6 +22,7 @@ public class LoginPage_and_HomePage {
 	public Locator More_arrow        = page.locator(" //span[text()='More']//parent::a//child::Lightning-icon");
 	public Locator Related_botton    = page.locator("(//*[text()='Related'])[1]");
 	public Locator Related_botton2 =page.locator("(//*[text()='Related'])[2]");
+	public Locator Related_botton3 =page.locator("(//*[text()='Related'])[1] | (//*[text()='Related'])[2]");
 	
 	
 	public Locator More_List(String list) {

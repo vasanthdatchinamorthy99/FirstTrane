@@ -168,11 +168,11 @@ public class Quote_Methods {
 	 * @author Vasanth D 
      *@param Add Inventory
 	 */
-	public void AddInventory(String Inventory) {
+	public void AddInventory(String Inventorys) {
 	
 		WebActions.click(ObjectInitializer.quotePage.get().search_boxes("Inventory"), "Click Inventory search box");
-	//	String Exp_Inventory = "HTG1318599";
-		page.keyboard().type(Inventory);
+		String Exp_Inventory = "HTG1318599";
+		page.keyboard().type(Exp_Inventory);
 		page.keyboard().press("ArrowDown");
 		Waits.waitForGivenTime(2000);
 		page.keyboard().press("Enter");

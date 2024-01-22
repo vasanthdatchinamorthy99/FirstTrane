@@ -54,6 +54,8 @@ public class Quote_Page {
 	public Locator Quote_status_Change(String status) {
 		return page.locator("//*[@class='slds-button-group-list']//child::button[text()='"+status+"'] ");
 	}
-
+    public Locator contract_Name(String data) {
+    	return page.locator("//div[text()='"+data+"']");
+    }
 
 }
