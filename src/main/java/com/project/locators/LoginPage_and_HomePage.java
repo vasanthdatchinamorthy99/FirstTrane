@@ -17,6 +17,11 @@ public class LoginPage_and_HomePage {
 	public Locator DealerPortal_password = page.getByPlaceholder(getFieldLabelInLanguage("LoginPage", "password"));
 
 //Home page & common Locators
+	public Locator SearchBox =page.locator("//*[contains(@class,'slds-global-header__item slds-global-header')]//button");
+	public Locator InputSearchBox=page.locator("//*[contains(text(),'and more')]//parent::div//*[@class='slds-input']");
+	public Locator SearchBox_Value(String Value) {
+		return page.locator("//*[@class='primary slds-truncate slds-rich-text-editor__output']//*[text()='"+Value+"']");
+	}
 	public Locator Quotes_tab         = page.locator("//*[@title='Quotes']//parent::one-app-nav-bar-item-root");
     public Locator New_Button  = page.locator("(//*[@title='New'])[1]");
 	public Locator More_arrow        = page.locator(" //span[text()='More']//parent::a//child::Lightning-icon");

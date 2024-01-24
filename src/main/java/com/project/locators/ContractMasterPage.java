@@ -27,18 +27,29 @@ public class ContractMasterPage {
 	public Locator OEM_Parts=page.locator("//*[text()='OEM Parts']");
 	public Locator Travel_By_Hours=page.locator("//*[text()='Travel By Hours']");
 	public Locator selectbtn =page.locator("(//*[text()='Select'])[2]");
-	public Locator contract_Type =page.locator("(//*[text()='Contract Type']//parent::div//following-sibling::div//div//span)[1]");
-	
-	
-	public Locator contractType_Value(String text) {
-         return page.locator("//*[@title='"+text+"']");
+	public Locator AddConditionbtn=page.locator("//*[text()='Add Condition']");
+	public Locator CreateNewCondition=page.locator("//*[text()='Create New Condition']");
+	public Locator PleaseSelectCriteria=page.locator("(//*[@class='slds-grid slds-wrap slds-grow'])[1]");
+	public Locator WarrantyProductFields=page.locator("//*[text()='Warranty Product fields']//parent::div//child::input");
+	public Locator Operator=page.locator("(//*[@class='slds-grid slds-wrap slds-grow'])[2]");
+	public Locator Value=page.locator("(//*[@class='slds-grid slds-wrap slds-grow'])[4]");
+	public Locator Close=page.locator("//*[@class='title slds-grid slds-grid_align-spread']//button");
+	public Locator DeactivateContract_Header=page.locator("//h1[text()='Deactivate Contract']");
+	 
+	public Locator EditInfo_button(String info) {
+		return page.locator("//*[text()='"+info+"']//parent::div//following-sibling::div//button");
 	}
-	//public Locator Travel=page.locator("//*[text()='Travel By Hours']");
+	public Locator SelectDropdown_Value(String text) {
+         return page.locator("(//*[@title='"+text+"'])[1]");
+         //return page.locator("//*[text()='"+text+"']");
+	}
+	
 	public Locator contract_Master_Feilds(String Label) {
 		return page.locator(" //*[text()='"+Label+"']//following-sibling::div//*[contains(@id,'input')]");
 	}
-	//= page.locator("//*[text()='Contract Master Name']//following-sibling::div//input");
-	
+	public Locator Contract_Master_Feild2(String Label) {
+		return page.locator("(//*[text()='"+Label+"']//parent::div//following-sibling::div//div//span)[1]");
+	}
 	public Locator created_ContractMaster_Data(String data) {
 		return page.locator("(//*[text()='"+data+"']//parent::div//following-sibling::div//span)[1]");
 	}

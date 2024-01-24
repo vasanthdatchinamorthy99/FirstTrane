@@ -49,7 +49,7 @@ public class Quote_Methods {
 		GenericAssertions.assertEquals("Approved", status, "Status:"+status+"");
 		logger.info("Text: \"******** Status: Approved*********");
 
-		WebActions.click(ObjectInitializer.quotePage.get().Quote_status_Change("Present Quote"), "Click: Present Quote");
+		WebActions.click(ObjectInitializer.quotePage.get().Status_Change_button("Present Quote"), "Click: Present Quote");
 		Waits.optionalWaitUntilElementIsVisible(ObjectInitializer.quotePage.get().proceed_btn, 5 , "Wait for element");
 		WebActions.click(ObjectInitializer.quotePage.get().proceed_btn, "Click: Proceed button");
 		Waits.waitForGivenTime(20000);
@@ -57,7 +57,7 @@ public class Quote_Methods {
 		GenericAssertions.assertEquals("Presented", status, "Status:"+status+"");
 		logger.info("Text: \"******** Status: Presented*********");
 
-		WebActions.click(ObjectInitializer.quotePage.get().Quote_status_Change("Accept Quote"), "Click: Accept Quote");
+		WebActions.click(ObjectInitializer.quotePage.get().Status_Change_button("Accept Quote"), "Click: Accept Quote");
 		Waits.optionalWaitUntilElementIsVisible(ObjectInitializer.quotePage.get().acceptAll_btn, 5 , "Wait for element");
 		WebActions.click(ObjectInitializer.quotePage.get().acceptAll_btn, "Click:Accept All");
 		Waits.waitForGivenTime(5000);

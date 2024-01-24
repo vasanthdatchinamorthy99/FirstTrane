@@ -62,24 +62,52 @@ Feature: Contract Master Functionalitys
 			
 			
 
-	@TS_CMSetup_006
-  Scenario Outline: Create Single Contract SKUs and SKU Items-Type GMP
-    Given Register TestData Index-1
+@TS_CMSetup_006
+Scenario Outline: Create ContractMaster with Single Contract SKUs and SKU Items-Type GMP
+Given Register TestData Index-1
 	  Given Navigate To Login Page and Login to Application as <UserRole>
 	  And Create a MasterContract with Single Contract SKU and SKU items
 	   Examples:
 			|UserRole|
 			|Internal|
+#		
+			
+ @TS_CMSetup_008
+ Scenario Outline: Create aContract master with multiple Rule configurations
+ Given Register TestData Index-1
+	  Given Navigate To Login Page and Login to Application as <UserRole>
+	  When Create ContractMaster "CONT_MAST_AUTOSingle2","Guaranteed Maintenance Plan"
+	  And Add RuleConfigurations "Record","Item Type","equals","Machine"
+	  And Add RuleConfigurations "Record","Track Type","equals","Non-Serialized"
+	Examples:
+			|UserRole|
+			|Internal|
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
+	@TS_CMSetup_007
+	  Scenario Outline: Edit an existing Contract Master and its Rule configurations.
+    Given Register TestData Index-1
+	  Given Navigate To Login Page and Login to Application as <UserRole>
+    When Create ContractMaster "CONT_MAST_AUTOSingle005","Guaranteed Maintenance Plan"
+	  And Add RuleConfigurations "Record","Item Type","equals","Machine"
+	  And Add RuleConfigurations "Record","Track Type","equals","Non-Serialized"
+	  And Edit ContractMaster Datas "CONT_MAST_AUTOSingle04","Status","Draft"
+    And Edit RuleConfigurations ""
+	  Examples:
+			|UserRole|
+			|Internal|
+  
+  @TS_CMSetup_009
+  Scenario Outline: Deactivate the Contract Master
+    Given Register TestData Index-1
+	  Given Navigate To Login Page and Login to Application as <UserRole>
+    #When Create ContractMaster "CONT_MAST_AUTOSingle006","Guaranteed Maintenance Plan"
+    And Deactivate the ContractMaster "CONT_MAST_AUTOSingle005"
+  
+  Examples:
+      |UserRole|
+			|Internal|
+
 			
 			
 			
