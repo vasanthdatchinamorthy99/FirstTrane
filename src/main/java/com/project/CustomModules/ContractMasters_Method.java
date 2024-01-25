@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.apache.groovy.parser.antlr4.GroovyParser.IfElseStatementContext;
 import org.apache.logging.log4j.Logger;
+import org.codehaus.groovy.classgen.genArrayAccess;
 import org.joda.time.LocalDate;
 
 import com.microsoft.playwright.Keyboard;
@@ -173,8 +174,8 @@ public class ContractMasters_Method {
 	}
 
 
-	@When("Create ContractMaster {string},{string}")
-	public void create_contract_master(String ContractMasterName, String ContractType) {
+	@When("Create ContractMaster {string},{string},{string},{string},{string},{string},{string},{string}")
+	public void create_contract_master(String ContractMasterName, String ContractType, String Status, String ActiveUntil, String PMACoverage, String PMATemplate, String PMBCoverage, String PMBTemplate) {
 		WebActions.click(ObjectInitializer.loginPage.get().More_arrow, "ViewProfileButton");
 		WebActions.click(ObjectInitializer.loginPage.get().More_List("Contract Masters"), "Click: Contract Master");
 
@@ -189,15 +190,29 @@ public class ContractMasters_Method {
 		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Contract Master Code"), ""+ContractMasterName+"CODE", "Enter Code ");
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Status"), "status search box");
-		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Active"), "Edit: Active");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(Status), "Edit: "+Status+"");
 
 		TodayDate = java.time.LocalDate.now().format(DateTimeFormatter.ofPattern("M/d/yyyy"));
 		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Active From"), TodayDate, "Enter Text:1/5/2027"); 
-		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Active Until"), "1/5/2027", "Enter Text:1/5/2027"); 
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Active Until"), ActiveUntil, "Enter Text:1/5/2027"); 
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Contract Type"), "Contract type search box");
 		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(ContractType), "Contract Typeselected: Guaranteed Maintenance Plan");
-
+        
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("PMA Coverage"), "Click PMA Coverage");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("PMA Coverage",PMACoverage), "Click "+PMACoverage+"");
+		
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("PMA Template"), "Click PMA Template");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("PMA Template",PMATemplate), "Click "+PMATemplate+"");
+		
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("PMB Coverage"), "Click PMB Coverage");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("PMB Coverage",PMBCoverage), "Click "+PMBCoverage+"");
+		
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("PMB Template"), "Click PMBTemplate");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("PMB Template",PMBTemplate), "Click "+PMBTemplate+"");
+		
+	
+		
 		WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
 
 		String Actual_ContractMasterName = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data("Contract Master Name"));
@@ -301,12 +316,148 @@ public class ContractMasters_Method {
 			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
 			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
 			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+		case"PMA Coverage":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown(LabelName).first(), "Click PMA Coverage");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue(LabelName,Value), "Click "+Value+"");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertTrue(text.contains(Value), "Value Edited successfully");
+			break;
+		case"PMA Template":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown(LabelName).first(), "Click PMA Template");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue(LabelName,Value), "Click "+Value+"");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertTrue(text.contains(Value), "Value Edited successfully");
+			break;
+		case"PMB Coverage":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown(LabelName).first(), "Click PMB Coverage");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue(LabelName,Value), "Click "+Value+"");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertTrue(text.contains(Value), "Value Edited successfully");
+			break;
+		case"PMB Template":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			ObjectInitializer.contractMasterPage.get().ClearSelection(LabelName).click();
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown(LabelName).first(), "Click PMB Template");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue(LabelName,Value), "Click "+Value+"");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertTrue(text.contains(Value), "Value Edited successfully");
+			break;
 
 		default:
 			System.out.println("+++++++++++++++++++++++++++++++++++++++++default case");
 			break;
 		}
 	}
+
+	@When("Edit Contract SKU {string},{string},{string}")
+	public void edit_contract_sku(String ContSKU,String LabelName,String Value) {
+
+		String pagetitle = page.title();
+		if (!pagetitle.contains("Contract SKUs | Salesforce")) {
+			Waits.waitForGivenTime(3000);
+			ObjectInitializer.loginPage.get().SearchBox.dblclick();
+			WebActions.enterText(ObjectInitializer.loginPage.get().InputSearchBox, ContSKU, "Enter Text"+ContSKU+"");
+			WebActions.click(ObjectInitializer.loginPage.get().SearchBox_Value(ContSKU), "");
+			Waits.waitForPageLoad();
+		}
+		String text="";
+		switch (LabelName) {
+		case "Contract SKU Name":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+            WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds(LabelName), Value, "Enter Text:"+Value+"");
+            WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Description":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds(LabelName), Value, "Enter Text:"+Value+"");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Contract SKU Code":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds(LabelName), Value, "Enter Text:"+Value+"");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Active From":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds(LabelName), Value, "Enter Text:"+Value+""); 	
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Active Until":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds(LabelName), Value, "Enter ActiveUntil:"+Value+""); 
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Base Price":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds(LabelName),Value, "Enter Text:"+Value+""); 
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Duration Value":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds(LabelName),Value, "Enter Text:"+Value+""); 
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Usage Units":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds(LabelName), Value, "Enter Text:"+Value+""); 
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Status":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2(LabelName), "Click: Status");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(Value), "dropdown selected=Active");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Duration Type":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2(LabelName), "Click: Status");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(Value), "dropdown selected="+Value+"");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+		case "Usage UOM":
+			WebActions.click(ObjectInitializer.contractMasterPage.get().EditInfo_button(LabelName), ""+Value+"Edit Button clicked");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2(LabelName), "Click: Status");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(Value), "dropdown selected="+Value+"");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
+			text = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data(LabelName));
+			GenericAssertions.assertEquals(Value, text, "Value Edited successfully");
+			break;
+	
+		default:
+			System.out.println("+++++++++++++++++++Label name is avaliable ");
+			break;
+		}
+
+	}
+
+
 
 	@When("Edit RuleConfigurations {string}")
 	public void edit_rule_configurations(String Value) {
@@ -335,24 +486,89 @@ public class ContractMasters_Method {
 			WebActions.click(ObjectInitializer.loginPage.get().SearchBox_Value(string), "");
 		}
 		WebActions.click(ObjectInitializer.quotePage.get().Status_Change_button("Deactivate Contract"), "Click: Deactivate Contract");
-
 		Waits.optionalWaitUntilElementIsVisible(ObjectInitializer.quotePage.get().proceed_btn, 5 , "Wait for element");
-		
-		String innerText = ObjectInitializer.contractMasterPage.get().DeactivateContract_Header.innerText();
+		String innerText = ObjectInitializer.contractMasterPage.get().Header("Deactivate Contract").innerText();
 		GenericAssertions.assertEquals("Deactivate Contract", innerText, "popupHeader:"+innerText+"");
-		
 		WebActions.click(ObjectInitializer.quotePage.get().proceed_btn, "Click: Proceed button");
 		BrowserActions.reload();
 		Waits.waitForPageLoad();
 		String Status = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data("Status"));
 		GenericAssertions.assertEquals("Inactive", Status, "Assert pass status= "+Status+"");
 		logger.info("   sucessfully Deactivated the ContractMaster   ");
-		
+
 
 	}
 
+	
 
+@Given("Delete an Existing Contract SKU {string}")
+public void delete_an_existing_contract_sku(String ContractSKU) {
+ 
+//	
+	String pagetitle = page.title();
+	if (!pagetitle.contains("Contract SKUs | Salesforce")) {
+		Waits.waitForPageLoad();
+		WebActions.click(ObjectInitializer.loginPage.get().SearchBox, "");
+		WebActions.enterText(ObjectInitializer.loginPage.get().InputSearchBox, ContractSKU, "Enter Text"+ContractSKU+"");
+		WebActions.click(ObjectInitializer.loginPage.get().SearchBox_Value(ContractSKU), "");
+	}	
+	WebActions.click(ObjectInitializer.quotePage.get().Status_Change_button("Delete"), "Click: Deactivate Contract");
+	String innerText = ObjectInitializer.contractMasterPage.get().Header("Delete Contract SKU").innerText();
+	GenericAssertions.assertEquals("Delete Contract SKU", innerText, "popupHeader:"+innerText+"");
+	WebActions.click(ObjectInitializer.contractMasterPage.get().Deletebtn, "Click: Delete button");
+//	boolean visible = ObjectInitializer.contractMasterPage.get().Header(ContractSKU).isvsiable();
+//	GenericAssertions.assertFalse(visible, ""+ContractSKU+"is deleted");
+//	
+	
+}
+	
+	
 
+	@Given("Create ContractSKU {string},{string},{string},{string},{string},{string},{string},{string},{string},{string},{string}")
+	public void create_contract_sku(String ContractMaster, String ContractSKU, String Description, String ContSKUCode,String ActiveUntil,String BasePrice,String DurationValue,String UsageUnit, String Status, String DurationType, String UsageUOM) {
+		//
+		String pagetitle = page.title();
+		if (!pagetitle.contains("Contract SKUs | Salesforce")) {
+			BrowserActions.navigateTo("https://tranetechnologies--fprasad.sandbox.lightning.force.com/lightning/o/tvnt__Contract_SKU__c/new");
+			Waits.waitForPageLoad();
+			WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Contract Master"), ContractMaster, "Enter Text:"+ContractMaster+"");
+			WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(ContractMaster), "Click ContractMaster");
+		}else {
+			WebActions.click(ObjectInitializer.contractMasterPage.get().CS_New_button,"click: CM_New button");
+			Waits.waitForGivenTime(2000);
+			String texts = WebActions.getText(ObjectInitializer.contractMasterPage.get().PopUpHeader);
+			GenericAssertions.assertEquals("New Contract SKU", texts, "Popup Header ="+texts+"");
+		}
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Contract SKU Name"), ContractSKU, "Enter Text:"+ContractSKU+"");
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Description"), Description, "Enter Text:"+Description+"");
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Contract SKU Code"), ContSKUCode, "Enter Text:"+ContSKUCode+"");
+		String format = java.time.LocalDate.now().format(DateTimeFormatter.ofPattern("M/d/yyyy"));
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Active From"), format, "Enter Text:1/5/2027"); 
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Active Until"), ActiveUntil, "Enter ActiveUntil:"+ActiveUntil+""); 
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Base Price"),BasePrice, "Enter Text:"+ContSKUCode+""); 
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Duration Value"),DurationValue, "Enter Text:"+ContSKUCode+""); 
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Usage Units"), UsageUnit, "Enter Text:"+ContSKUCode+""); 
+
+		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Status"), "Status");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(Status), "dropdown selected="+Status+"");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Duration Type"), "Duration Type");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(DurationType), "dropdown selected="+DurationType+"");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM"), "Usage UOM");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(UsageUOM), "dropdown selected="+UsageUOM+"");
+
+		WebActions.click(ObjectInitializer.contractMasterPage.get().All, "Click : All");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click : All");
+		Waits.waitForGivenTime(1000);
+		page.reload();
+		Waits.waitForPageLoad();
+		String Contract_Master = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data("Contract Master"));
+		//GenericAssertions.assertEquals(ContractMaster, Contract_Master, "Created data "+Contract_Master+"");
+		GenericAssertions.assertTrue(Contract_Master.contains(ContractMaster), "Created data "+Contract_Master+"");
+		String Contract_SKU  = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data("Contract SKU Name"));
+		GenericAssertions.assertEquals(ContractSKU, Contract_SKU, "Created data "+ContractSKU+"");
+
+	}
 
 
 
@@ -426,7 +642,7 @@ public class ContractMasters_Method {
 
 	/**
 	 * @author Vasanth D 
-	 *@param ADD New Contract SKU
+	 *@param ADD Contract SKU
 	 */
 	public void Add_Contract_SKU(String ContractSKUName, int i) {
 		WebActions.click(ObjectInitializer.contractMasterPage.get().CS_New_button,"click: CM_New button");
@@ -458,8 +674,6 @@ public class ContractMasters_Method {
 		WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click : All");
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Created_ContractSKU_Data(ContractSKUName), "Click: "+ContractSKUName+"");
-		//WebActions.selectFromDropdown(page.locator("(//*[@class=\"slds-listbox slds-listbox_vertical\"])[1]"), "All", "selected all");
-
 		Waits.waitForGivenTime(3000);
 
 		String Actual_ContractSKUName = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data("Contract SKU Name"));

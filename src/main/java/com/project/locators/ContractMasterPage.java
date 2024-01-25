@@ -35,9 +35,14 @@ public class ContractMasterPage {
 	public Locator Value=page.locator("(//*[@class='slds-grid slds-wrap slds-grow'])[4]");
 	public Locator Close=page.locator("//*[@class='title slds-grid slds-grid_align-spread']//button");
 	public Locator DeactivateContract_Header=page.locator("//h1[text()='Deactivate Contract']");
+	public Locator Deletebtn = page.locator("//button[@title='Delete']");
 	 
+	public Locator Header(String Header) {
+		return page.locator("//*[text()='"+Header+"']");
+	}
+	
 	public Locator EditInfo_button(String info) {
-		return page.locator("//*[text()='"+info+"']//parent::div//following-sibling::div//button");
+		return page.locator("//*[text()='"+info+"']//parent::div//following-sibling::div//button[contains(@title,'Edit')]");
 	}
 	public Locator SelectDropdown_Value(String text) {
          return page.locator("(//*[@title='"+text+"'])[1]");
@@ -60,4 +65,14 @@ public class ContractMasterPage {
 	public Locator SKU_Item_List(String data) {
 		return page.locator("//div[contains(@class,'changeRecordType')]//*[text()='"+data+"']");
 	}
+	public Locator SearchDropdown(String data) {
+		return page.locator("//*[text()='"+data+"']//parent::*//child::div//*[contains(@id,'combobox-input')]");
+	}
+	public Locator SearchDropdownValue(String BoxName,String Value) {
+		return page.locator("//*[text()='"+BoxName+"']//parent::*//child::div//*[contains(@id,'combobox-input')]//*[text()='"+Value+"']");
+	}
+	public Locator ClearSelection(String BoxName) {
+		return page.locator("//*[text()='"+BoxName+"']//parent::*//child::div//*[@title='Clear Selection']");
+	}
+	
 }

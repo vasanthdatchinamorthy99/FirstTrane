@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
                      glue = { "com.tavant.base", "com.project.base","com.project.CommonModules", "com.project.CustomModules" },
                    plugin = { "pretty","html:target/HtmlReports/report.html", "com.tavant.listeners.CustomListener:" },
                   publish = false,
-                     tags = "@TS_CMSetup_009"
+                  monochrome = true,
+                     tags = "@TS_CMSetup_007"
                  )
 public class TestRunner {
 
