@@ -39,8 +39,12 @@ public class Quote_Page {
     }
     
     
-	public Locator search_boxes(String value) {
+	public Locator searchBox_Click(String value) {
 		return page.locator("//*[text()='"+value+"']//parent::div//following-sibling::div//div//span[text()='Select']");
+	}
+	public String searchBox_Input(String Value) {
+		return "//*[text()='"+Value+"']//parent::div//following-sibling::div//div//input";
+		
 	}
 	public Locator Created_Quote_data(String data) {
 		return page.locator("//*[text()='"+data+"']//parent::Lightning-output-field//*[@class='slds-form-element__static']");

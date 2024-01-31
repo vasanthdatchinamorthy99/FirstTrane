@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
                    plugin = { "pretty","html:target/HtmlReports/report.html", "com.tavant.listeners.CustomListener:" },
                   publish = false,
                   monochrome = true,
-                     tags = "@TS_CMSetup_007"
+                     tags = "@Guaranteed_Maintenance_Plan"
                  )
 public class TestRunner {
 

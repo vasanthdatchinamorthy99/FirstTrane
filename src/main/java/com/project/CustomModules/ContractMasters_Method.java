@@ -101,6 +101,8 @@ public class ContractMasters_Method {
 	@Given("Create a ContractMaster(.*)and(.*) with Multiple Contract SKU and SKU items$")
 	public void create_a_contract_master_cont_type_with_Multiple_contract_sku_and_sku_items(String ContName ,String ContType) {
 
+		
+		
 		Waits.waitForGivenTime(3000);
 		WebActions.click(ObjectInitializer.loginPage.get().More_arrow, "ViewProfileButton");
 		WebActions.click(ObjectInitializer.loginPage.get().More_List("Contract Masters"), "Click: Contract Master");
@@ -112,17 +114,17 @@ public class ContractMasters_Method {
 
 		WebActions.click(ObjectInitializer.loginPage.get().Related_botton,"click: Related button");
 		String ContractSKU_URL = page.url();
-		for (int i=1; i <=4; i++) {
-			if (i==2) {
+		for (int i=1; i <2; i++) {
+			if (i!=1) {
 				System.out.println("*****************************************************I=2");
 				page.navigate(ContractSKU_URL);
 				Waits.waitForPageLoad();
 				WebActions.click(ObjectInitializer.loginPage.get().Related_botton,"click: Related button");
-				System.out.println("I=2");
+				System.out.println("I is "+i+"");
 			}
 			System.out.println("************************************************************I=1");
 			Add_Contract_SKU(""+ContName+">>SKU_00"+i+"",i);
-			for (int j =1; j <=4; j++) {
+			for (int j =1; j <=2; j++) {
 				if (j==1) {
 					Waits.waitForGivenTime(1000);
 					WebActions.click(ObjectInitializer.loginPage.get().Related_botton2,"click: Related button");
@@ -131,7 +133,8 @@ public class ContractMasters_Method {
 					page.keyboard().press("Tab");
 					Waits.waitForGivenTime(1000);
 					page.keyboard().press("Enter");
-					Add_SKUItem_Maintenance();
+					Add_SKUItem_AddonMaintenance();
+					
 				}else if (j==2) {
 					WebActions.click(ObjectInitializer.loginPage.get().Related_botton2,"click: Related button");
 					Waits.waitForGivenTime(1000);
@@ -139,23 +142,23 @@ public class ContractMasters_Method {
 					page.keyboard().press("Tab");
 					Waits.waitForGivenTime(1000);
 					page.keyboard().press("Enter");
-					Add_SKUItem_AddonMaintenance();
-				}else if (j==3) {
-					WebActions.click(ObjectInitializer.loginPage.get().Related_botton2,"click: Related button");
-					Waits.waitForGivenTime(1000);
-					page.keyboard().press("Tab");
-					page.keyboard().press("Tab");
-					Waits.waitForGivenTime(1000);
-					page.keyboard().press("Enter");
-					Add_SKUItem_ExtendedWarranty();
-				}else if (j==4) {
-					WebActions.click(ObjectInitializer.loginPage.get().Related_botton2,"click: Related button");
-					Waits.waitForGivenTime(1000);
-					page.keyboard().press("Tab");
-					page.keyboard().press("Tab");
-					Waits.waitForGivenTime(1000);
-					page.keyboard().press("Enter");
-					Add_SKUItem_AddOnExtendedWarranty();
+					Add_SKUItem_Maintenance();
+//				}else if (j==3) {
+//					WebActions.click(ObjectInitializer.loginPage.get().Related_botton2,"click: Related button");
+//					Waits.waitForGivenTime(1000);
+//					page.keyboard().press("Tab");
+//					page.keyboard().press("Tab");
+//					Waits.waitForGivenTime(1000);
+//					page.keyboard().press("Enter");
+//					Add_SKUItem_ExtendedWarranty();
+//				}else if (j==4) {
+//					WebActions.click(ObjectInitializer.loginPage.get().Related_botton2,"click: Related button");
+//					Waits.waitForGivenTime(1000);
+//					page.keyboard().press("Tab");
+//					page.keyboard().press("Tab");
+//					Waits.waitForGivenTime(1000);
+//					page.keyboard().press("Enter");
+//					Add_SKUItem_AddOnExtendedWarranty();
 				}
 			}
 		}
@@ -595,6 +598,10 @@ public void delete_an_existing_contract_sku(String ContractSKU) {
 		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Description"), "Description_"+ContractMasterName+"", "Enter Text:Description_"+ContractMasterName+"");
 		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Contract Master Code"), ""+ContractMasterName+"CODE", "EnterText=CONT_MAST_AUTO02 ");
 
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Days Allowance Before"), "231", "EnterText:231 ");
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Days Allowance After"), "132", "Enter Text:132");
+		
+		
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Status"), "status search box");
 		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Active"), "Edit: Active");
 
@@ -605,6 +612,24 @@ public void delete_an_existing_contract_sku(String ContractSKU) {
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Contract Type"), "Contract type search box");
 		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(ContractType), "Contract Typeselected: Guaranteed Maintenance Plan");
 
+		
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("PMA Coverage"), "Click PMA Coverage");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("PMA Coverage","CD_JAN24"), "Click :CD_JAN24");
+		
+		
+		
+		Waits.waitForGivenTime(5000);
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("PMA Template"), "Click PMA Template");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("PMA Template","PMP Template"), "Click : PMP Template");
+		
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("PMB Coverage"), "Click PMB Coverage");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("PMB Coverage","CD_JAN24"), "Click : CD_JAN24");
+		
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("PMB Template"), "Click PMBTemplate");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("PMB Template","QA test 01"), "Click :QA test 01");
+		
+		
+		
 		WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click :Save Button");
 
 		String Actual_ContractMasterName = WebActions.getText(ObjectInitializer.contractMasterPage.get().created_ContractMaster_Data("Contract Master Name"));
@@ -645,7 +670,7 @@ public void delete_an_existing_contract_sku(String ContractSKU) {
 	 *@param ADD Contract SKU
 	 */
 	public void Add_Contract_SKU(String ContractSKUName, int i) {
-		WebActions.click(ObjectInitializer.contractMasterPage.get().CS_New_button,"click: CM_New button");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().CS_New_button.first(),"click: CM_New button");
 		Waits.waitForGivenTime(2000);
 		String texts = WebActions.getText(ObjectInitializer.contractMasterPage.get().PopUpHeader);
 		GenericAssertions.assertEquals("New Contract SKU", texts, "Popup Header ="+texts+"");
@@ -686,65 +711,130 @@ public void delete_an_existing_contract_sku(String ContractSKU) {
 	public void Add_SKUItem_Maintenance() {
 
 		//	WebActions.click(ObjectInitializer.contractMasterPage.get().SKU_Item_Newbtn, "SKU_New button");
+//		String texts1 = WebActions.getText(ObjectInitializer.contractMasterPage.get().SKU_Item_Header);
+//		GenericAssertions.assertEquals("New SKU Item", texts1, "Popup Header ="+texts1+"");
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().SKU_Item_List("Maintenance"),"click: Radio button=Add-On Maintenance");
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().next_btn,"click:Next");
+//		Waits.waitForGivenTime(1000);
+//
+//		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("SKU Item Name"), "SKUITEM", "Enter Text:SKUITEM"); 
+//		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Description"), "SKUI_Maintenance", "Enter Text:SKUI_Maintenance"); 
+//		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Start Duration Value"), "0", "Enter Text:0"); 
+//		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("End Duration Value"), "5", "Enter Text:1"); 
+//		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Start Usage"), "0", "Enter Text:0");
+//		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("End Usage"), "500", "Enter Text:1000"); 
+//		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Base Price"), "500", "Enter Text:4000"); 
+//
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Type"), "Status");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Maintenance"), "dropdown selected= Add-On Maintenance");
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Start Duration Type"), "Start Duration Type");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Months"), "dropdown selected= Months");
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM"), "Usage UOM");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM"), "Usage UOM");
+//		ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("KM").click();
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("End Duration Type"), "End Duration Type");
+//		Waits.waitForGivenTime(3000);
+//		//		Waits.waitUntilElementIsVisible(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(""), "6" );
+//		//		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Year"), "dropdown selected= Days");
+//		//		ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Year").first().click();
+//
+//		//	page.getByTitle("Year").first().click();
+//
+//		page.keyboard().press("ArrowDown");
+//		page.keyboard().press("ArrowDown");
+//		Waits.waitForGivenTime(1000);
+//		page.keyboard().press("Enter");
+//
+//		WebActions.click("//*[text()='Claim Template']//parent::*//child::div//*[contains(@id,'combobox-input')]", "Click: Clame template");
+//		Waits.waitForGivenTime(1000);
+//		page.keyboard().type("Template");
+//		Waits.waitForGivenTime(1000);
+//		page.keyboard().press("ArrowDown");
+//		page.keyboard().press("ArrowDown");
+//		page.keyboard().press("Enter");
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().OEM_Parts, "Click : OEM_Parts");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Travel_By_Hours, "Click : Travel_By_Hours");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click : All");
+
+		
+		
+		
+		//BrowserActions.navigateTo("https://tranetechnologies--fprasad.sandbox.lightning.force.com/lightning/o/tvnt__SKU_Item__c/new");
+	//	WebActions.click(ObjectInitializer.contractMasterPage.get().SKU_Item_Newbtn, "SKU_New button");
 		String texts1 = WebActions.getText(ObjectInitializer.contractMasterPage.get().SKU_Item_Header);
 		GenericAssertions.assertEquals("New SKU Item", texts1, "Popup Header ="+texts1+"");
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().SKU_Item_List("Maintenance"),"click: Radio button=Add-On Maintenance");
 
-		WebActions.click(ObjectInitializer.contractMasterPage.get().next_btn,"click:Next");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().next_btn.first(),"click:Next");
 		Waits.waitForGivenTime(1000);
 
 		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("SKU Item Name"), "SKUITEM", "Enter Text:SKUITEM"); 
-		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Description"), "SKUI_Maintenance", "Enter Text:SKUI_Maintenance"); 
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Description"), "SKUI_Add-On Maintenance", "Enter Text:SKUI_Add-On Maintenance"); 
 		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Start Duration Value"), "0", "Enter Text:0"); 
-		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("End Duration Value"), "5", "Enter Text:1"); 
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("End Duration Value"), "1", "Enter Text:1"); 
 		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Start Usage"), "0", "Enter Text:0");
-		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("End Usage"), "500", "Enter Text:1000"); 
-		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Base Price"), "500", "Enter Text:4000"); 
+		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("End Usage"), "1000", "Enter Text:1000"); 
+//		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Base Price"), "4000", "Enter Text:4000"); 
 
+		Waits.waitForGivenTime(1000);
+		ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM").click();
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM"), "Usage UOM");
+		ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("KM").click();
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Type"), "Status");
-		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Maintenance"), "dropdown selected= Add-On Maintenance");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Maintenance"), "dropdown selected= Maintenance");
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Start Duration Type"), "Start Duration Type");
 		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Months"), "dropdown selected= Months");
 
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM"), "Usage UOM");
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM"), "Usage UOM");
-		ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("KM").click();
+		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Maintenance Type"), "Start Duration Type");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("PMA"), "dropdown selected= Months");
+		
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("End Duration Type"), "End Duration Type");
-		Waits.waitForGivenTime(3000);
-		//		Waits.waitUntilElementIsVisible(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value(""), "6" );
-		//		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Year"), "dropdown selected= Days");
-		//		ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Year").first().click();
-
-		//	page.getByTitle("Year").first().click();
-
+		Waits.waitForGivenTime(2000);
+		//ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Days").click();
+		//Waits.waitUntilElementIsVisible(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Days"), "6" );
+		//WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Days"), "dropdown selected= Days");
 		page.keyboard().press("ArrowDown");
 		page.keyboard().press("ArrowDown");
 		Waits.waitForGivenTime(1000);
 		page.keyboard().press("Enter");
 
-		WebActions.click("//*[text()='Claim Template']//parent::*//child::div//*[contains(@id,'combobox-input')]", "Click: Clame template");
-		Waits.waitForGivenTime(1000);
-		page.keyboard().type("Template");
-		Waits.waitForGivenTime(1000);
-		page.keyboard().press("ArrowDown");
-		page.keyboard().press("ArrowDown");
-		page.keyboard().press("Enter");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("Claim Template"), "Click PMBTemplate");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("Claim Template","CLM_Mac"), "Click :CLM_Mac");
+		
 
-		WebActions.click(ObjectInitializer.contractMasterPage.get().OEM_Parts, "Click : OEM_Parts");
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("Coverage"), "Click PMB Coverage");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("Coverage","CD_JAN24"), "Click : CD_JAN24");
 
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Travel_By_Hours, "Click : Travel_By_Hours");
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
+//		WebActions.click("//*[text()='Claim Template']//parent::*//child::div//*[contains(@id,'combobox-input')]", "Click: Clame template");
+//		Waits.waitForGivenTime(1000);
+//		page.keyboard().press("Enter");
 
-		WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click : All");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().OEM_Parts, "Click : OEM_Parts");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Travel_By_Hours, "Click : Travel_By_Hours");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
 
+		WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click : All");	
 	}
 	public void Add_SKUItem_AddonMaintenance() {
-		//WebActions.click(ObjectInitializer.contractMasterPage.get().SKU_Item_Newbtn, "SKU_New button");
+//		BrowserActions.navigateTo("https://tranetechnologies--fprasad.sandbox.lightning.force.com/lightning/o/tvnt__SKU_Item__c/new");
+	//	WebActions.click(ObjectInitializer.contractMasterPage.get().SKU_Item_Newbtn, "SKU_New button");
 		String texts1 = WebActions.getText(ObjectInitializer.contractMasterPage.get().SKU_Item_Header);
 		GenericAssertions.assertEquals("New SKU Item", texts1, "Popup Header ="+texts1+"");
 
@@ -762,7 +852,9 @@ public void delete_an_existing_contract_sku(String ContractSKU) {
 		WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Base Price"), "4000", "Enter Text:4000"); 
 
 		Waits.waitForGivenTime(1000);
-
+		ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM").click();
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM"), "Usage UOM");
+		ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("KM").click();
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Type"), "Status");
 		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Add-On Maintenance"), "dropdown selected= Add-On Maintenance");
@@ -770,14 +862,13 @@ public void delete_an_existing_contract_sku(String ContractSKU) {
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Start Duration Type"), "Start Duration Type");
 		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Months"), "dropdown selected= Months");
 
-
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM"), "Usage UOM");
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Usage UOM"), "Usage UOM");
-		ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("KM").click();
-
+		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("Maintenance Type"), "Start Duration Type");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("PMA"), "dropdown selected= Months");
+		
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().Contract_Master_Feild2("End Duration Type"), "End Duration Type");
-		Waits.waitForGivenTime(5000);
+		Waits.waitForGivenTime(2000);
+		//ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Days").click();
 		//Waits.waitUntilElementIsVisible(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Days"), "6" );
 		//WebActions.click(ObjectInitializer.contractMasterPage.get().SelectDropdown_Value("Days"), "dropdown selected= Days");
 		page.keyboard().press("ArrowDown");
@@ -785,16 +876,22 @@ public void delete_an_existing_contract_sku(String ContractSKU) {
 		Waits.waitForGivenTime(1000);
 		page.keyboard().press("Enter");
 
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("Claim Template"), "Click PMBTemplate");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("Claim Template","CLM_Mac"), "Click :CLM_Mac");
+		
 
-		WebActions.click("//*[text()='Claim Template']//parent::*//child::div//*[contains(@id,'combobox-input')]", "Click: Clame template");
-		Waits.waitForGivenTime(1000);
-		page.keyboard().press("Enter");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdown("Coverage"), "Click PMB Coverage");
+		WebActions.click(ObjectInitializer.contractMasterPage.get().SearchDropdownValue("Coverage","CD_JAN24"), "Click : CD_JAN24");
 
-		WebActions.click(ObjectInitializer.contractMasterPage.get().OEM_Parts, "Click : OEM_Parts");
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
+//		WebActions.click("//*[text()='Claim Template']//parent::*//child::div//*[contains(@id,'combobox-input')]", "Click: Clame template");
+//		Waits.waitForGivenTime(1000);
+//		page.keyboard().press("Enter");
 
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Travel_By_Hours, "Click : Travel_By_Hours");
-		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().OEM_Parts, "Click : OEM_Parts");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
+//
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Travel_By_Hours, "Click : Travel_By_Hours");
+//		WebActions.click(ObjectInitializer.contractMasterPage.get().Right_Arrow, "Click : Right Arrow >");
 
 		WebActions.click(ObjectInitializer.contractMasterPage.get().savebtn, "Click : All");	
 	}

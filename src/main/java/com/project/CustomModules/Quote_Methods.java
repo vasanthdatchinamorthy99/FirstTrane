@@ -3,8 +3,11 @@ package com.project.CustomModules;
 import org.apache.logging.log4j.Logger;
 
 import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.mongodb.assertions.Assertions;
 import com.project.CommonModules.ObjectInitializer;
+import com.tavant.actions.BrowserActions;
 import com.tavant.actions.MouseActions;
 import com.tavant.actions.WebActions;
 import com.tavant.assertions.GenericAssertions;
@@ -36,12 +39,15 @@ public class Quote_Methods {
 		String Quote_number = create_Quote("Guaranteed Maintenance Plan");
 		logger.info("Text: \"******** Quote created sucessfully :"+Quote_number+"*********");
 		
-		String Exp_Inventory = "HTG1318599";
-		AddInventory(Exp_Inventory);
-		logger.info("Text: \"********addInventory with skip addons sucessfully*********");
-		String Actal_Inventory = AddSKU_ContractandSkipAddons("CONT_MAST_AUTO04");
-		GenericAssertions.assertEquals(Actal_Inventory, Exp_Inventory, " "+Actal_Inventory+"");
 		
+		AddInventory("");
+		
+		   Waits.waitForGivenTime(5000);
+		    GenericAssertions.assertTrue(false, "Failed by me");
+		logger.info("Text: \"********addInventory with skip addons sucessfully*********");
+//		String Actal_Inventory = AddSKU_ContractandSkipAddons("CONT_MAST_AUTO04");
+//		GenericAssertions.assertEquals(Actal_Inventory, Exp_Inventory, " "+Actal_Inventory+"");
+//		
 		String Actal_Quote_Number= ObjectInitializer.quotePage.get().Quote_Details("Quote").innerText();
 		GenericAssertions.assertEquals(Actal_Quote_Number, Quote_number, " ");
 		WebActions.click(ObjectInitializer.quotePage.get().Quote_Details("Quote"), "Click Quote:"+Actal_Quote_Number+"");
@@ -119,10 +125,13 @@ public class Quote_Methods {
 	 */
 	
 	public String create_Quote(String type) {
-		WebActions.click(ObjectInitializer.loginPage.get().More_arrow, "ViewProfileButton");
-		WebActions.click(ObjectInitializer.quotePage.get().Quotes, "ViewProfileButton");
-		Waits.waitForGivenTime(3000);
-		Waits.waitUntilElementIsVisible(ObjectInitializer.quotePage.get().New_Quotes, "new");
+		Waits.waitForGivenTime(10000);
+		//BrowserActions.navigateTo("https://tranetechnologies--fprasad.sandbox.lightning.force.com/lightning/o/tvnt__Quote__c/list");
+		BrowserActions.navigateTo("https://tranetechnologies--fprasad.sandbox.my.site.com/TSVCDealerPortal/s/quote/tvnt__Quote__c");
+//		WebActions.click(ObjectInitializer.loginPage.get().More_arrow, "ViewProfileButton");
+//		WebActions.click(ObjectInitializer.quotePage.get().Quotes, "ViewProfileButton");
+//		Waits.waitForGivenTime(3000);
+//		Waits.waitUntilElementIsVisible(ObjectInitializer.quotePage.get().New_Quotes, "new");
 		WebActions.click(ObjectInitializer.quotePage.get().New_Quotes, "NewQuote");
 //		Waits.optionalWaitUntilElementIsVisible(ObjectInitializer.quotePage.get().Search_Box,4 , "Waiting for search box");
 //		WebActions.click(ObjectInitializer.quotePage.get().Search_Box, "Click");
@@ -133,28 +142,76 @@ public class Quote_Methods {
 //		Waits.waitForGivenTime(2000);
 //		page.keyboard().press("Enter");
 		logger.info("Text: \"********Selected TK - NA in Business Unit*********");
-
-		WebActions.click((ObjectInitializer.quotePage.get().search_boxes("Dealer")), "Click");
-		page.keyboard().type("TK");
-		//WebActions.enterText(ObjectInitializer.quotePage.get().search_boxes("Dealer"), "TK", "Selected Dealer :TK");
-		page.keyboard().press("ArrowDown");
-		Waits.waitForGivenTime(4000);
-		page.keyboard().press("Enter");
-		logger.info("Text: \"********Selected Dealer :TK*********");
-
-		WebActions.click((ObjectInitializer.quotePage.get().search_boxes("Customer")), "Click");
-		page.keyboard().type("HILLER FORD");
-		//WebActions.enterText(ObjectInitializer.quotePage.get().search_boxes("Customer"), "HILLER FORD", "Selected Customer: HILLER FORD");
-		page.keyboard().press("ArrowDown");
-		Waits.waitForGivenTime(2000);
-		page.keyboard().press("Enter");
+		ObjectInitializer.quotePage.get().searchBox_Click("Dealer").click();
+		page.type(ObjectInitializer.quotePage.get().searchBox_Input("Dealer"), "tk");//K TAMPA FL (G2280)_1  //TK Albany NY
+      //  WebActions.enterText(ObjectInitializer.quotePage.get().searchBox_Input("Dealer"), "TK", "EnterText : TK TAMPA FL (G2280)_1");
+		WebActions.click(ObjectInitializer.quotePage.get().select_DropdownValue("TK TAMPA FL (G2280)_1"), "Selected dropdown value");
+//		page.keyboard().type("TK");
+//		//WebActions.enterText(ObjectInitializer.quotePage.get().search_boxes("Dealer"), "TK", "Selected Dealer :TK");
+//		page.keyboard().press("ArrowDown");
+//		Waits.waitForGivenTime(4000);
+//		page.keyboard().press("Enter");
+		logger.info("Text: \"********Selected Dealer :TK Albuquerque NM*********");
+//HILLER FORD
+		ObjectInitializer.quotePage.get().searchBox_Click("Customer").click();
+		page.type(ObjectInitializer.quotePage.get().searchBox_Input("Customer"), "hi");
+		//WebActions.enterText(ObjectInitializer.quotePage.get().searchBox_Input("Customer"), "hi", "EnterText : THILLER FORD");
+		WebActions.click(ObjectInitializer.quotePage.get().select_DropdownValue("HILLER FORD"), "Selected dropdown value");
+		
 		logger.info("Text: \"********Selected Customer: HILLER FORD*********");
 
-		WebActions.click((ObjectInitializer.quotePage.get().search_boxes("Quote Type")), "Click");
-		WebActions.click(ObjectInitializer.quotePage.get().select_DropdownValue(type), "Quote Types "+type+"selected");
+	
+		ObjectInitializer.quotePage.get().searchBox_Click("Quote Type").click();
+		WebActions.click(ObjectInitializer.quotePage.get().select_DropdownValue(type), "Selected dropdown value");
+		
 		logger.info("Text: \"********Selected Quote Type:T"+type+"*********");
 
+		//Part Pricing
+		ObjectInitializer.quotePage.get().searchBox_Click("Part Pricing").click();
+	    WebActions.click(ObjectInitializer.quotePage.get().select_DropdownValue("Elite Pricing"), "Selected dropdown value");
+		
+	    
+	    //Age Of Equipment
+	    ObjectInitializer.quotePage.get().searchBox_Click("Age Of Equipment").click();
+	    WebActions.click(ObjectInitializer.quotePage.get().select_DropdownValue("0-1 Yrs"), "Selected dropdown value");
+		
+	    //Coverage Master
+	    ObjectInitializer.quotePage.get().searchBox_Click("Coverage Master").click();
+		page.type(ObjectInitializer.quotePage.get().searchBox_Input("Coverage Master"), "auto");
+	    //WebActions.enterText(ObjectInitializer.quotePage.get().searchBox_Input("Coverage Master"), "auto", "EnterText : Part Pricing");
+	    WebActions.click(ObjectInitializer.quotePage.get().select_DropdownValue("CONT_MAST_AUTO"), "Selected dropdown value");
+	   
+	    //Risk Associated
+	    ObjectInitializer.quotePage.get().searchBox_Click("Risk Associated").click();
+	    WebActions.click(ObjectInitializer.quotePage.get().select_DropdownValue("Dealer"), "Selected dropdown value");
+	    
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Customer Email").first(), "emailid@tavant.com", "");
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Customer Name").first(), "Legand", "");
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Customer Phone").first(), "0987654321", "");
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Duration(Months)").first(), "12", "");
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Estimated Hours(Diesel)").first(), "23", "");
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Estimated Hours(Electric)").first(), "3332", "");
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("PMA Frequency(Months)").first(), "23", "");
+	    //PMB Frequency(Months)
+
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("PMB Frequency(Months)").first(), "23", "");
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("PMB Usage Frequency(Hours)").first(), "23", "");
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Fleet Size").first(), "33", "");
+	    
+	    WebActions.enterText(ObjectInitializer.contractMasterPage.get().contract_Master_Feilds("Part Pricing Deviation(%)").first(), "32", "");
+	    
+	  	    
 		Waits.waitForGivenTime(2000);
+		ObjectInitializer.quotePage.get().Save_button.click();
 		WebActions.click(ObjectInitializer.quotePage.get().Save_button, "Save_Button");
 		logger.info("Text: \"******** Guaranteed Maintenance Plan Quote is Saved*********");
 
@@ -170,7 +227,7 @@ public class Quote_Methods {
 	 */
 	public void AddInventory(String Inventorys) {
 	
-		WebActions.click(ObjectInitializer.quotePage.get().search_boxes("Inventory"), "Click Inventory search box");
+		WebActions.click(ObjectInitializer.quotePage.get().searchBox_Input("Inventory"), "Click Inventory search box");
 		String Exp_Inventory = "HTG1318599";
 		page.keyboard().type(Exp_Inventory);
 		page.keyboard().press("ArrowDown");

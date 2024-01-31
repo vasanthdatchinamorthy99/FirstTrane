@@ -61,7 +61,7 @@ public class CommonMethods {
 			BrowserActions.navigateTo(PropertiesUtils.getInternalUserURL());
 			loginToApplicationAsInternalUser(user);
 			Thread.currentThread().setName("Internal");
-//			break;
+			break;
 //		case "SystemAdmin":
 //			BrowserActions.navigateTo(PropertiesUtils.getInternalUserURL());
 //			loginToApplicationAsInternalUser(user);
@@ -72,11 +72,11 @@ public class CommonMethods {
 //			loginToApplicationAsExternalUser(user);
 //			Thread.currentThread().setName("DealerUser");
 //			break;
-//		case "GD_DealerUser":
-//			BrowserActions.navigateTo(PropertiesUtils.getExternalUserURL());
-//			loginToApplicationAsExternalUser(user);
-//			Thread.currentThread().setName("GD_DealerUser");
-//			break;
+		case "DealerUser":
+			BrowserActions.navigateTo(PropertiesUtils.getExternalUserURL());
+			loginToApplicationAsExternalUser(user);
+			Thread.currentThread().setName("DealerUser");
+			break;
 //		case "GD_Retailer":
 //			BrowserActions.navigateTo(PropertiesUtils.getExternalUserURL());
 //			loginToApplicationAsExternalUser(user);
@@ -96,7 +96,7 @@ public class CommonMethods {
 //			BrowserActions.navigateTo(PropertiesUtils.getInternalUserURL());
 //			loginToApplicationAsInternalUser(user);
 //			Thread.currentThread().setName("FieldMeasureAdmin");
-			break;
+//			break;
 		default:
 			GenericAssertions.assertTrue(false, "Assertion Failed: Given User " + user
 					+ " is not a Valid User, Accepted Users are SystemAdmin/WarrantyAdmin/DealerUser/ClaimProcessor/ActiveAccountDealerUser",
@@ -152,10 +152,14 @@ public class CommonMethods {
 	private void loginToApplicationAsExternalUser(String user) {
 		String userRefField = user + "_UserName";
 		String pwdRefField = user + "_Password";
-		WebActions.enterText(ObjectInitializer.loginPage.get().DealerPortal_username,
-				PropertiesUtils.getProperty(userRefField), "username");
-		WebActions.enterText(ObjectInitializer.loginPage.get().DealerPortal_password,
-				PropertiesUtils.getProperty(pwdRefField), "password");
+//		WebActions.enterText(ObjectInitializer.loginPage.get().DealerPortal_username.first(),
+//				PropertiesUtils.getProperty(userRefField), "username");
+//		WebActions.enterText(ObjectInitializer.loginPage.get().DealerPortal_password.first(),
+//				PropertiesUtils.getProperty(pwdRefField), "password");
+		
+		
+		LocatorUtils.enterDataIntoField("LoginPage", "Username", getTestDataIndex());
+		LocatorUtils.enterDataIntoField("LoginPage", "Password", getTestDataIndex());
 		WebActions.click(ObjectInitializer.loginPage.get().loginButton, "loginButton");
 	}
 

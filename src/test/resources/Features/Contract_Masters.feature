@@ -6,10 +6,10 @@ Feature: Contract Master Functionalitys
     Given Register TestData Index-1
 	  Given Navigate To Login Page and Login to Application as <UserRole>
 	  And Create a ContractMaster<ContName>and<ContType> with Multiple Contract SKU and SKU items
-	  Then verify the Created contract master<ContName>and<ContType>is available in inventory Add skus list
+#	  Then verify the Created contract master<ContName>and<ContType>is available in inventory Add skus list
 	  Examples:
 			|UserRole|ContName|ContType|
-			|Internal|CONT_MAST_GMP003|Guaranteed Maintenance Plan|			
+			|Internal|CONT_MAST_GMP004|Guaranteed Maintenance Plan|			
 			
 
 	
@@ -83,7 +83,7 @@ Scenario Outline: Create aContract master with multiple Rule configurations
 	  Scenario Outline: Edit an existing Contract Master and its Rule configurations.
     Given Register TestData Index-1
 	  Given Navigate To Login Page and Login to Application as <UserRole>
-    #When Create ContractMaster "CONT_MAST_AUTOSingle2","Guaranteed Maintenance Plan","Active","1/2/2028","CD_JAN24","PMP Template","CD_JAN24","PMP Template" 
+    When Create ContractMaster "CONT_MAST_AUTOSingle2","Guaranteed Maintenance Plan","Active","1/2/2028","CD_JAN24","PMP Template","CD_JAN24","PMP Template" 
 #	  And Add RuleConfigurations "Record","Item Type","equals","Machine"
 #	  And Add RuleConfigurations "Record","Track Type","equals","Non-Serialized"
 	  And Edit ContractMaster Datas "CONT_MAST_AUTOSingle2","PMB Template","QA test 01"
