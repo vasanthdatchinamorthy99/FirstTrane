@@ -168,7 +168,7 @@ public class ContractMasters_Method {
 
 	@Then("verify the Created contract master(.*)and(.*)is available in inventory Add skus list$")
 	public void verify_the_created_contract_master_is_available_in_inventory_add_skus_list(String ContName,String ContType) {
-		quotemthod.create_Quote(ContType);
+		quotemthod.create_Simple_Quote(ContType);
 		quotemthod.AddInventory("");
 		WebActions.click(ObjectInitializer.quotePage.get().Add_SKUs_button, "Click AddSKUs button");
 		String text = WebActions.getText(ObjectInitializer.quotePage.get().contract_Name(ContName));

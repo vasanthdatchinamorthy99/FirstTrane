@@ -23,7 +23,7 @@ public class Quote_Page {
 	public Locator Add_button	     = page.locator("//button[text()='Add'] ");
 	public Locator Add_SKUs_button   = page.locator("//button[text()='Add SKUs'] ");
 	public Locator Skip_Addons_button= page.locator("//button[text()='Skip Add-ons'] ");
-	public String Table_body         ="//*[@class='slds-table']//tbody ";
+//	public String Table_body         ="//*[@class='slds-table']//tbody ";
 	public Locator Save_and_Submit   = page.locator("//button[text()='Save & Submit']");
 //	public Locator Related_botton    = page.locator("//*[text()='Related'] ");
 	public Locator Quote_Unit_Name   = page.locator("//*[text()='Quote Unit Name']//ancestor::thead//following-sibling::tbody//child::th//*[@class='slds-truncate'] ");
@@ -32,19 +32,22 @@ public class Quote_Page {
     public Locator acceptAll_btn     = page.locator("//button[text()='Accept All']");
     public Locator service_Contracts = page.locator(" //*[text()='Service Contracts']//ancestor::lst-list-view-manager-header//following-sibling::div//child::*[@class='slds-card__body slds-wrap slds-grid']");
 
-	//method
     
+//method
+    public Locator AddSKUButton(String inventory) {
+		 return page.locator("//*[text()='"+inventory+"']//ancestor::*[@class='slds-grid slds-wrap']//child::button[text()='Add SKUs']");
+	}
+    public Locator button(String Name) {
+		return page.locator("//button[text()='"+Name+"']");
+	}
     public Locator select_DropdownValue(String data) {
     	return page.locator("//*[@class='label'][text()='"+data+"']");
     }
-    
-    
 	public Locator searchBox_Click(String value) {
 		return page.locator("//*[text()='"+value+"']//parent::div//following-sibling::div//div//span[text()='Select']");
 	}
 	public String searchBox_Input(String Value) {
 		return "//*[text()='"+Value+"']//parent::div//following-sibling::div//div//input";
-		
 	}
 	public Locator Created_Quote_data(String data) {
 		return page.locator("//*[text()='"+data+"']//parent::Lightning-output-field//*[@class='slds-form-element__static']");
@@ -60,6 +63,9 @@ public class Quote_Page {
 	}
     public Locator contract_Name(String data) {
     	return page.locator("//div[text()='"+data+"']");
+    }
+    public Locator StatusChange(String value) {
+    	return page.locator("//div[text()='"+value+"']");
     }
 
 }
